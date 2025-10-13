@@ -1,9 +1,6 @@
-// Localização: src/App.jsx
-
 import { useState } from 'react';
 import './App.css';
-
-// Nosso banco de perguntas. Pode adicionar mais objetos aqui.
+import logo from './logo.svg';
 const perguntas = [
   {
     pergunta: 'No universo Marvel, qual foi o primeiro vilão em vingadores?',
@@ -225,7 +222,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src="/logo.svg" alt="Logo do Game of Science" className="quiz-logo" />
+      <img src={logo} alt="Logo do Game of Science" className="quiz-logo" />
       <h1>Game of Science</h1>
       <div className="quiz-container">
         <h2>{perguntaAtual.pergunta}</h2>
