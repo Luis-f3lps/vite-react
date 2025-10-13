@@ -1,4 +1,3 @@
-/* Localização: src/App.css */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -102,7 +101,6 @@ h1 {
 .proxima-btn:hover {
   background-color: #229954;
 }
-/* Adicione estas novas classes no final do seu arquivo src/App.css */
 
 .pular-container {
   margin-top: 25px;
@@ -123,4 +121,7 @@ h1 {
 
 .pular-btn:hover {
   background-color: #f0f0f0;
+}
+.quiz-logo {
+  width: 100px; 
 }
