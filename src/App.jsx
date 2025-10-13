@@ -225,6 +225,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src="/logo.svg" alt="Logo do Game of Science" className="quiz-logo" />
       <h1>Game of Science</h1>
       <div className="quiz-container">
         <h2>{perguntaAtual.pergunta}</h2>
