@@ -1,6 +1,9 @@
+// Localização: src/App.jsx
+
 import { useState } from 'react';
 import './App.css';
-import logo from './logo.svg';
+
+// Nosso banco de perguntas. Pode adicionar mais objetos aqui.
 const perguntas = [
   {
     pergunta: 'No universo Marvel, qual foi o primeiro vilão em vingadores?',
@@ -178,39 +181,14 @@ const perguntas = [
     respostaCorreta: 'Bronze',
   },
 ];
-// Função para embaralhar um array (Algoritmo Fisher-Yates)
-const shuffleArray = (array) => {
-  const newArray = [...array]; // Cria uma cópia para não modificar o original
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]]; // Troca os elementos
-  }
-  return newArray;
-};
-
 
 function App() {
-  // NOVO ESTADO: Armazena as perguntas já em ordem aleatória
-  const [perguntasEmbaralhadas, setPerguntasEmbaralhadas] = useState([]);
-  
   const [indicePergunta, setIndicePergunta] = useState(0);
   const [feedback, setFeedback] = useState('');
   const [jaRespondeu, setJaRespondeu] = useState(false);
   const [respostaSelecionada, setRespostaSelecionada] = useState(null);
 
-  // EFEITO: Roda apenas uma vez quando o componente é montado
-  useEffect(() => {
-    // Embaralha o array de perguntas e salva no estado
-    setPerguntasEmbaralhadas(shuffleArray(perguntas));
-  }, []); // O array vazio [] garante que isso rode só uma vez
-
-  // Adicionamos uma verificação para evitar erro na primeira renderização
-  if (perguntasEmbaralhadas.length === 0) {
-    return <div>Carregando quiz...</div>;
-  }
-
-  // Agora, usamos a lista embaralhada para pegar a pergunta atual
-  const perguntaAtual = perguntasEmbaralhadas[indicePergunta];
+  const perguntaAtual = perguntas[indicePergunta];
 
   const handleRespostaClick = (alternativa) => {
     if (jaRespondeu) return;
@@ -225,23 +203,15 @@ function App() {
     }
   };
 
+  // Esta função agora serve tanto para "Próxima" quanto para "Pular"
   const avancarParaProximaPergunta = () => {
     setFeedback('');
     setJaRespondeu(false);
     setRespostaSelecionada(null);
     
     const proximoIndice = indicePergunta + 1;
-    
-    // Verifica se ainda há perguntas na lista embaralhada
-    if (proximoIndice < perguntasEmbaralhadas.length) {
-      setIndicePergunta(proximoIndice);
-    } else {
-      // O quiz acabou! Você pode mostrar uma tela final ou reiniciar.
-      // Por enquanto, vamos reiniciar embaralhando novamente.
-      alert('Fim de jogo! O quiz será reiniciado.');
-      setPerguntasEmbaralhadas(shuffleArray(perguntas)); // Re-embaralha para a próxima rodada
-      setIndicePergunta(0);
-    }
+    // Se chegar ao fim, volta para o início. Senão, vai para a próxima.
+    setIndicePergunta(proximoIndice < perguntas.length ? proximoIndice : 0);
   };
 
   const getClassForButton = (alternativa) => {
@@ -255,7 +225,6 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} alt="Logo do Game of Science" className="quiz-logo" />
       <h1>Game of Science</h1>
       <div className="quiz-container">
         <h2>{perguntaAtual.pergunta}</h2>
@@ -273,6 +242,9 @@ function App() {
           ))}
         </div>
 
+        {/* ÁREA DE BOTÕES DE AÇÃO (PULAR E PRÓXIMA) */}
+        
+        {/* Mostra a mensagem de feedback APÓS uma resposta */}
         {feedback && (
           <div className="feedback-container">
             <p className={feedback.includes('acertou') ? 'feedback-correto' : 'feedback-errado'}>
@@ -284,6 +256,7 @@ function App() {
           </div>
         )}
 
+        {/* Mostra o botão de pular APENAS ANTES de uma resposta */}
         {!jaRespondeu && (
           <div className="pular-container">
             <button onClick={avancarParaProximaPergunta} className="pular-btn">
