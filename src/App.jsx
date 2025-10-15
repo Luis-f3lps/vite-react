@@ -1,8 +1,7 @@
-// Localização: src/App.jsx
 import { useState, useEffect } from 'react';
 import './App.css';
 import logo from './logo.svg';
-// Nosso banco de perguntas. Pode adicionar mais objetos aqui.
+
 const perguntas = [
   {
     pergunta: 'No universo Marvel, qual foi o primeiro vilão em vingadores?',
@@ -179,20 +178,394 @@ const perguntas = [
     alternativas: ['Ouro', 'Prata', 'Bronze', 'Não conquistou nenhuma medalha'],
     respostaCorreta: 'Bronze',
   },
+
+  {
+    pergunta: 'Qual organela é responsável pela respiração celular e produção de ATP?',
+    alternativas: ['Ribossomo', 'Lisossomo', 'Mitocôndria', 'Cloroplasto'],
+    respostaCorreta: 'Mitocôndria',
+  },
+  {
+    pergunta: 'O conjunto de características visíveis de um organismo é chamado de:',
+    alternativas: ['Genótipo', 'Cariótipo', 'Alelo', 'Fenótipo'],
+    respostaCorreta: 'Fenótipo',
+  },
+  {
+    pergunta: 'Qual dos reinos agrupa seres procariontes, como as bactérias?',
+    alternativas: ['Reino Fungi', 'Reino Monera', 'Reino Protista', 'Reino Plantae'],
+    respostaCorreta: 'Reino Monera',
+  },
+  {
+    pergunta: 'O processo pelo qual as plantas utilizam luz para produzir seu alimento é a:',
+    alternativas: ['Respiração', 'Fotossíntese', 'Transpiração', 'Quimiossíntese'],
+    respostaCorreta: 'Fotossíntese',
+  },
+  {
+    pergunta: 'A relação ecológica entre o cupim e os protozoários em seu intestino é um exemplo de:',
+    alternativas: ['Parasitismo', 'Predatismo', 'Mutualismo', 'Competição'],
+    respostaCorreta: 'Mutualismo',
+  },
+  {
+    pergunta: 'Qual é a principal função das hemácias (glóbulos vermelhos) no sangue?',
+    alternativas: ['Coagulação', 'Defesa imunológica', 'Transporte de O₂', 'Transporte de H₂O'],
+    respostaCorreta: 'Transporte de O₂',
+  },
+  {
+    pergunta: 'A divisão celular que reduz o número de cromossomos pela metade é a:',
+    alternativas: ['Mitose', 'Prófase', 'Meiose', 'Anáfase'],
+    respostaCorreta: 'Meiose',
+  },
+  {
+    pergunta: 'Asas de morcegos e asas de insetos são exemplos de estruturas:',
+    alternativas: ['Homólogas', 'Vestigiais', 'Embrionárias', 'Análogas'],
+    respostaCorreta: 'Análogas',
+  },
+  {
+    pergunta: 'Qual hormônio, produzido pelo pâncreas, regula a entrada de glicose nas células?',
+    alternativas: ['Glucagon', 'Adrenalina', 'Insulina', 'Testosterona'],
+    respostaCorreta: 'Insulina',
+  },
+  {
+    pergunta: 'O tecido vegetal que transporta a seiva bruta (água e sais) é o:',
+    alternativas: ['Floema', 'Parênquima', 'Colênquima', 'Xilema'],
+    respostaCorreta: 'Xilema',
+  },
+  {
+    pergunta: 'Um indivíduo com genótipo "Aa" para uma característica é considerado:',
+    alternativas: ['Homozigoto', 'Recessivo', 'Heterozigoto', 'Dominante'],
+    respostaCorreta: 'Heterozigoto',
+  },
+  {
+    pergunta: 'A principal teoria da evolução, proposta por Darwin, baseia-se na:',
+    alternativas: ['Lei do Uso e Desuso', 'Herança de Caracteres', 'Geração Espontânea', 'Seleção Natural'],
+    respostaCorreta: 'Seleção Natural',
+  },
+  {
+    pergunta: 'Em qual parte do sistema digestório humano ocorre a maior parte da absorção de nutrientes?',
+    alternativas: ['Estômago', 'Intestino Grosso', 'Fígado', 'Intestino Delgado'],
+    respostaCorreta: 'Intestino Delgado',
+  },
+  {
+    pergunta: 'Os vírus são considerados parasitas intracelulares obrigatórios por que:',
+    alternativas: ['Possuem núcleo', 'Não têm metabolismo', 'Fazem fotossíntese', 'São pluricelulares'],
+    respostaCorreta: 'Não têm metabolismo',
+  },
+  {
+    pergunta: 'A base nitrogenada exclusiva do RNA, que substitui a Timina do DNA, é a:',
+    alternativas: ['Citosina', 'Uracila', 'Guanina', 'Adenina'],
+    respostaCorreta: 'Uracila',
+  },
+{
+    pergunta: 'O número atômico (Z) de um elemento químico corresponde ao número de:',
+    alternativas: ['Nêutrons', 'Elétrons', 'Prótons', 'Íons'],
+    respostaCorreta: 'Prótons',
+  },
+  {
+    pergunta: 'Qual tipo de ligação química ocorre pela transferência de elétrons entre um metal e um ametal?',
+    alternativas: ['Ligação Covalente', 'Ligação Metálica', 'Ligação Iônica', 'Ponte de Hidrogênio'],
+    respostaCorreta: 'Ligação Iônica',
+  },
+  {
+    pergunta: 'Na Tabela Periódica, os elementos da família 18 (ou 8A) são conhecidos como:',
+    alternativas: ['Metais Alcalinos', 'Halogênios', 'Gases Nobres', 'Metais de Transição'],
+    respostaCorreta: 'Gases Nobres',
+  },
+  {
+    pergunta: 'Uma solução com pH = 2 é considerada:',
+    alternativas: ['Ácida', 'Básica', 'Neutra', 'Alcalina'],
+    respostaCorreta: 'Ácida',
+  },
+  {
+    pergunta: 'A reação de combustão completa de um composto orgânico sempre produz:',
+    alternativas: ['CO e H₂O', 'O₂ e CO₂', 'CO₂ e H₂O', 'H₂ e O₂'],
+    respostaCorreta: 'CO₂ e H₂O',
+  },
+  {
+    pergunta: 'Qual é a massa molar aproximada da molécula de água (H₂O)? (Dados: H=1, O=16)',
+    alternativas: ['16 g/mol', '17 g/mol', '18 g/mol', '2 g/mol'],
+    respostaCorreta: '18 g/mol',
+  },
+  {
+    pergunta: 'Átomos de um mesmo elemento químico que possuem diferentes números de nêutrons são chamados de:',
+    alternativas: ['Isóbaros', 'Isótonos', 'Isômeros', 'Isótopos'],
+    respostaCorreta: 'Isótopos',
+  },
+  {
+    pergunta: 'Qual das seguintes substâncias é um exemplo de hidrocarboneto?',
+    alternativas: ['Etanol (C₂H₅OH)', 'Glicose (C₆H₁₂O₆)', 'Sal de cozinha (NaCl)', 'Metano (CH₄)'],
+    respostaCorreta: 'Metano (CH₄)',
+  },
+  {
+    pergunta: 'O processo de passagem direta de uma substância do estado sólido para o gasoso é chamado:',
+    alternativas: ['Fusão', 'Ebulição', 'Sublimação', 'Condensação'],
+    respostaCorreta: 'Sublimação',
+  },
+  {
+    pergunta: 'De acordo com a Lei de Lavoisier, em uma reação química, a massa total dos reagentes é:',
+    alternativas: ['Menor que a dos produtos', 'Maior que a dos produtos', 'Variável', 'Igual à dos produtos'],
+    respostaCorreta: 'Igual à dos produtos',
+  },
+  {
+    pergunta: 'Qual função orgânica é caracterizada pela presença do grupo funcional hidroxila (-OH) ligado a um carbono saturado?',
+    alternativas: ['Éter', 'Álcool', 'Aldeído', 'Cetona'],
+    respostaCorreta: 'Álcool',
+  },
+  {
+    pergunta: 'A ligação que ocorre pelo compartilhamento de pares de elétrons entre átomos é a:',
+    alternativas: ['Ligação Iônica', 'Ligação Metálica', 'Ligação de Hidrogênio', 'Ligação Covalente'],
+    respostaCorreta: 'Ligação Covalente',
+  },
+  {
+    pergunta: 'Qual é o nome do processo de separação de misturas que utiliza um funil de bromo?',
+    alternativas: ['Peneiração', 'Filtração', 'Decantação', 'Destilação'],
+    respostaCorreta: 'Decantação',
+  },
+  {
+    pergunta: 'Qual gás é o principal responsável pelo agravamento do efeito estufa?',
+    alternativas: ['Oxigênio (O₂)', 'Nitrogênio (N₂)', 'Dióxido de Carbono (CO₂)', 'Hélio (He)'],
+    respostaCorreta: 'Dióxido de Carbono (CO₂)',
+  },
+  {
+    pergunta: 'Em uma reação de neutralização, um ácido reage com uma base para formar:',
+    alternativas: ['Sal e Óxido', 'Ácido e Água', 'Óxido e Base', 'Sal e Água'],
+    respostaCorreta: 'Sal e Água',
+  },
+  {
+    pergunta: 'Segundo a Primeira Lei de Newton (Inércia), um corpo em movimento tende a:',
+    alternativas: ['Parar imediatamente', 'Acelerar continuamente', 'Manter seu movimento retilíneo e uniforme', 'Mudar de direção'],
+    respostaCorreta: 'Manter seu movimento retilíneo e uniforme',
+  },
+  {
+    pergunta: 'A grandeza física que mede a energia transferida de um corpo para outro devido à diferença de temperatura é:',
+    alternativas: ['Potência', 'Pressão', 'Trabalho', 'Calor'],
+    respostaCorreta: 'Calor',
+  },
+  {
+    pergunta: 'Qual é a unidade de medida de Tensão Elétrica (d.d.p.) no Sistema Internacional?',
+    alternativas: ['Ampere (A)', 'Ohm (Ω)', 'Watt (W)', 'Volt (V)'],
+    respostaCorreta: 'Volt (V)',
+  },
+  {
+    pergunta: 'O fenômeno que explica por que uma colher parece "quebrada" dentro de um copo com água é a:',
+    alternativas: ['Reflexão', 'Refração', 'Difração', 'Polarização'],
+    respostaCorreta: 'Refração',
+  },
+  {
+    pergunta: 'De acordo com a Segunda Lei de Newton, a aceleração de um corpo é diretamente proporcional à:',
+    alternativas: ['Sua massa', 'Sua velocidade', 'Força resultante', 'Sua temperatura'],
+    respostaCorreta: 'Força resultante',
+  },
+  {
+    pergunta: 'Um carro que se move com velocidade constante de 90 km/h está em:',
+    alternativas: ['Movimento acelerado', 'Movimento retardado', 'Movimento uniforme', 'Repouso'],
+    respostaCorreta: 'Movimento uniforme',
+  },
+  {
+    pergunta: 'O som é uma onda do tipo:',
+    alternativas: ['Eletromagnética e transversal', 'Mecânica e longitudinal', 'Eletromagnética e longitudinal', 'Mecânica e transversal'],
+    respostaCorreta: 'Mecânica e longitudinal',
+  },
+  {
+    pergunta: 'A energia associada ao movimento de um corpo é chamada de energia:',
+    alternativas: ['Potencial', 'Térmica', 'Cinética', 'Elástica'],
+    respostaCorreta: 'Cinética',
+  },
+  {
+    pergunta: 'Em um circuito elétrico em série, se uma lâmpada queimar, as outras:',
+    alternativas: ['Continuam acesas', 'Apagam', 'Brilham mais forte', 'Diminuem o brilho'],
+    respostaCorreta: 'Apagam',
+  },
+  {
+    pergunta: 'Qual processo de propagação de calor ocorre sem a necessidade de um meio material, como o calor do Sol que chega à Terra?',
+    alternativas: ['Condução', 'Convecção', 'Radiação', 'Ebulição'],
+    respostaCorreta: 'Radiação',
+  },
+  {
+    pergunta: 'A Primeira Lei da Termodinâmica é uma afirmação do princípio da:',
+    alternativas: ['Conservação da Carga', 'Conservação da Massa', 'Ação e Reação', 'Conservação da Energia'],
+    respostaCorreta: 'Conservação da Energia',
+  },
+  {
+    pergunta: 'A grandeza física que relaciona a frequência de uma onda com seu comprimento de onda é a:',
+    alternativas: ['Amplitude', 'Velocidade', 'Período', 'Fase'],
+    respostaCorreta: 'Velocidade',
+  },
+  {
+    pergunta: 'A imagem formada por um espelho plano é sempre:',
+    alternativas: ['Real, invertida e menor', 'Virtual, direita e do mesmo tamanho', 'Real, direita e maior', 'Virtual, invertida e do mesmo tamanho'],
+    respostaCorreta: 'Virtual, direita e do mesmo tamanho',
+  },
+  {
+    pergunta: 'A força de atração ou repulsão entre duas cargas elétricas é descrita pela Lei de:',
+    alternativas: ['Ohm', 'Faraday', 'Ampère', 'Coulomb'],
+    respostaCorreta: 'Coulomb',
+  },
+  {
+    pergunta: 'A pressão exercida por um fluido em repouso aumenta com a:',
+    alternativas: ['Velocidade', 'Temperatura', 'Área', 'Profundidade'],
+    respostaCorreta: 'Profundidade',
+  },
+  {
+    pergunta: 'Qual é o nome da linha que divide o círculo em duas partes iguais?',
+    alternativas: ['Diagonal', 'Corda', 'Raio', 'Diâmetro'],
+    respostaCorreta: 'Diâmetro',
+  },
+  {
+    pergunta: 'Qual o resultado da conta 1²¹ + 3²?',
+    alternativas: ['30', '27', '10', '7'],
+    respostaCorreta: '10',
+  },
+  {
+    pergunta: 'Qual a fórmula para calcular a área de um triângulo com ângulo de 90°?',
+    alternativas: ['|x|', 'b x h', '(b x h)/2', 'raiz(a² + b²)'],
+    respostaCorreta: '(b x h)/2',
+  },
+  {
+    pergunta: 'Em qual conjunto numérico se encontra o número raiz quadrada de -24?',
+    alternativas: ['Conjunto dos reais', 'Conjunto dos complexos', 'Conjunto dos Racionais', 'Não existe raiz negativa'],
+    respostaCorreta: 'Conjunto dos complexos',
+  },
+  {
+    pergunta: 'Suponha que temos um ângulo A e um ângulo B. Sendo eles ângulos suplementares, qual o valor do ângulo B se A tiver o valor de 45°?',
+    alternativas: ['315°', '135°', '45°', '90°'],
+    respostaCorreta: '135°',
+  },
+  {
+    pergunta: 'Quanto é 20% de 200?',
+    alternativas: ['10', '20', '30', '40'],
+    respostaCorreta: '40',
+  },
+  {
+    pergunta: 'Ao lançar um dado comum de 6 faces, qual a probabilidade de sair um número par?',
+    alternativas: ['1/6', '1/3', '1/2', '2/3'],
+    respostaCorreta: '1/2',
+  },
+  {
+    pergunta: 'Quanto é 45 - 53?',
+    alternativas: ['-8', '8', '-9', '9'],
+    respostaCorreta: '-8',
+  },
+  {
+    pergunta: 'Quantos cm tem 12 km?',
+    alternativas: ['120.000', '1.200.000', '12.000.000', '12.000'],
+    respostaCorreta: '1.200.000',
+  },
+  {
+    pergunta: 'A constante de pi pertence a qual conjunto numérico?',
+    alternativas: ['Conjunto dos irracionais', 'Conjunto dos naturais', 'Conjunto dos racionais', 'Conjunto dos complexos'],
+    respostaCorreta: 'Conjunto dos irracionais',
+  },
+  {
+    pergunta: 'Quanto é 12 x 6?',
+    alternativas: ['62', '48', '60', '72'],
+    respostaCorreta: '72',
+  },
+  {
+    pergunta: 'Se João tem 72 reais e divide ele entre seus 8 netos, quantos reais cada um vai ganhar?',
+    alternativas: ['R$8,00', 'R$9,00', 'R$7,00', 'R$8,50'],
+    respostaCorreta: 'R$9,00',
+  },
+  {
+    pergunta: 'A soma dos ângulos internos de qualquer triângulo é sempre igual a:',
+    alternativas: ['90°', '180°', '270°', '360°'],
+    respostaCorreta: '180°',
+  },
+  {
+    pergunta: 'Qual a raiz quadrada de 144?',
+    alternativas: ['11', '13', '14', '12'],
+    respostaCorreta: '12',
+  },
+  {
+    pergunta: 'Qual a raiz cúbica de 64?',
+    alternativas: ['3', '8', '4', '16'],
+    respostaCorreta: '4',
+  },
+  {
+    pergunta: 'Qual evento deu início à Primeira Guerra Mundial em 1914?',
+    alternativas: ['A Revolução Russa', 'A invasão da Polônia', 'A queda da Bastilha', 'O assassinato de Francisco Ferdinando'],
+    respostaCorreta: 'O assassinato de Francisco Ferdinando',
+  },
+  {
+    pergunta: 'Quem é o autor da obra "Mona Lisa"?',
+    alternativas: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
+    respostaCorreta: 'Leonardo da Vinci',
+  },
+  {
+    pergunta: 'Qual é o maior planeta do nosso Sistema Solar?',
+    alternativas: ['Terra', 'Saturno', 'Júpiter', 'Marte'],
+    respostaCorreta: 'Júpiter',
+  },
+  {
+    pergunta: 'Em qual continente está localizado o Deserto do Saara?',
+    alternativas: ['Ásia', 'África', 'Oceania', 'América do Sul'],
+    respostaCorreta: 'África',
+  },
+  {
+    pergunta: 'Qual é o rio mais longo do mundo?',
+    alternativas: ['Rio Nilo', 'Rio Mississipi', 'Rio Yangtzé', 'Rio Amazonas'],
+    respostaCorreta: 'Rio Amazonas',
+  },
+  {
+    pergunta: 'A Teoria da Relatividade foi desenvolvida por qual cientista?',
+    alternativas: ['Isaac Newton', 'Albert Einstein', 'Galileu Galilei', 'Marie Curie'],
+    respostaCorreta: 'Albert Einstein',
+  },
+  {
+    pergunta: 'Qual das seguintes fontes de energia é considerada renovável?',
+    alternativas: ['Petróleo', 'Gás Natural', 'Energia Eólica', 'Carvão Mineral'],
+    respostaCorreta: 'Energia Eólica',
+  },
+  {
+    pergunta: 'Quantos lados tem um heptágono?',
+    alternativas: ['5', '6', '7', '8'],
+    respostaCorreta: '7',
+  },
+  {
+    pergunta: 'Qual cidade é famosa por abrigar a Torre Eiffel?',
+    alternativas: ['Londres', 'Roma', 'Berlim', 'Paris'],
+    respostaCorreta: 'Paris',
+  },
+  {
+    pergunta: 'O processo pelo qual as plantas produzem seu próprio alimento é a:',
+    alternativas: ['Respiração', 'Fotossíntese', 'Transpiração', 'Decomposição'],
+    respostaCorreta: 'Fotossíntese',
+  },
+  {
+    pergunta: 'Quem escreveu "Romeu e Julieta"?',
+    alternativas: ['Dante Alighieri', 'Miguel de Cervantes', 'William Shakespeare', 'Homero'],
+    respostaCorreta: 'William Shakespeare',
+  },
+  {
+    pergunta: 'Qual é a montanha mais alta do mundo?',
+    alternativas: ['Monte Kilimanjaro', 'K2', 'Monte Everest', 'Aconcágua'],
+    respostaCorreta: 'Monte Everest',
+  },
+  {
+    pergunta: 'A Guerra Fria foi uma disputa ideológica entre quais duas superpotências?',
+    alternativas: ['Alemanha e Japão', 'Reino Unido e França', 'EUA e União Soviética', 'China e Índia'],
+    respostaCorreta: 'EUA e União Soviética',
+  },
+  {
+    pergunta: 'Qual planeta é conhecido como o "Planeta Vermelho"?',
+    alternativas: ['Vênus', 'Saturno', 'Júpiter', 'Marte'],
+    respostaCorreta: 'Marte',
+  },
+  {
+    pergunta: 'A ONU foi criada após qual grande conflito mundial?',
+    alternativas: ['Guerra do Vietnã', 'Primeira Guerra Mundial', 'Segunda Guerra Mundial', 'Guerra da Coreia'],
+    respostaCorreta: 'Segunda Guerra Mundial',
+  },
 ];
-// Função para embaralhar um array (Algoritmo Fisher-Yates)
 const shuffleArray = (array) => {
-  const newArray = [...array]; // Cria uma cópia para não modificar o original
+  const newArray = [...array]; 
   for (let i = newArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]]; // Troca os elementos
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]]; 
   }
   return newArray;
 };
 
 
 function App() {
-  // NOVO ESTADO: Armazena as perguntas já em ordem aleatória
   const [perguntasEmbaralhadas, setPerguntasEmbaralhadas] = useState([]);
   
   const [indicePergunta, setIndicePergunta] = useState(0);
@@ -200,18 +573,14 @@ function App() {
   const [jaRespondeu, setJaRespondeu] = useState(false);
   const [respostaSelecionada, setRespostaSelecionada] = useState(null);
 
-  // EFEITO: Roda apenas uma vez quando o componente é montado
   useEffect(() => {
-    // Embaralha o array de perguntas e salva no estado
     setPerguntasEmbaralhadas(shuffleArray(perguntas));
-  }, []); // O array vazio [] garante que isso rode só uma vez
+  }, []); 
 
-  // Adicionamos uma verificação para evitar erro na primeira renderização
   if (perguntasEmbaralhadas.length === 0) {
     return <div>Carregando quiz...</div>;
   }
 
-  // Agora, usamos a lista embaralhada para pegar a pergunta atual
   const perguntaAtual = perguntasEmbaralhadas[indicePergunta];
 
   const handleRespostaClick = (alternativa) => {
@@ -234,14 +603,11 @@ function App() {
     
     const proximoIndice = indicePergunta + 1;
     
-    // Verifica se ainda há perguntas na lista embaralhada
     if (proximoIndice < perguntasEmbaralhadas.length) {
       setIndicePergunta(proximoIndice);
     } else {
-      // O quiz acabou! Você pode mostrar uma tela final ou reiniciar.
-      // Por enquanto, vamos reiniciar embaralhando novamente.
       alert('Fim de jogo! O quiz será reiniciado.');
-      setPerguntasEmbaralhadas(shuffleArray(perguntas)); // Re-embaralha para a próxima rodada
+      setPerguntasEmbaralhadas(shuffleArray(perguntas));
       setIndicePergunta(0);
     }
   };
