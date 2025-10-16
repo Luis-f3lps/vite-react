@@ -144,6 +144,46 @@ const perguntas = [
     respostaCorreta: 'Legião Urbana',
   },
   {
+    pergunta: 'Qual das seguintes fontes de energia NÃO é considerada renovável?',
+    alternativas: ['Solar', 'Eólica', 'Gás Natural', 'Hidrelétrica'],
+    respostaCorreta: 'Gás Natural',
+  },
+  {
+    pergunta: 'Como a energia eólica é gerada?',
+    alternativas: ['Pela queima de biomassa.', 'Pelo movimento das marés.', 'Pela força dos ventos.', 'Pela captação de calor.'],
+    respostaCorreta: 'Pela força dos ventos.',
+  },
+  {
+    pergunta: 'Qual o nome do dispositivo que converte luz solar diretamente em eletricidade?',
+    alternativas: ['Turbina hidrelétrica', 'Painel fotovoltaico', 'Aerogerador', 'Coletor solar térmico'],
+    respostaCorreta: 'Painel fotovoltaico',
+  },
+  {
+    pergunta: 'A energia geotérmica utiliza qual fonte de calor para gerar eletricidade?',
+    alternativas: ['O calor do núcleo da Terra.', 'O calor da queima de lixo.', 'A radiação solar no solo.', 'O atrito das placas tectônicas.'],
+    respostaCorreta: 'O calor do núcleo da Terra.',
+  },
+  {
+    pergunta: 'O que é biomassa, utilizada como fonte de energia renovável?',
+    alternativas: ['Energia das massas de água.', 'Matéria orgânica.', 'Mineral radioativo.', 'Massa de ar quente.'],
+    respostaCorreta: 'Matéria orgânica.',
+  },
+  {
+    pergunta: 'Qual a principal fonte de energia renovável na matriz elétrica do Brasil?',
+    alternativas: ['Eólica', 'Solar', 'Biomassa', 'Hidrelétrica'],
+    respostaCorreta: 'Hidrelétrica',
+  },
+  {
+    pergunta: 'Qual é uma das principais desvantagens da energia solar e eólica?',
+    alternativas: ['Emitem gases estufa.', 'Matéria-prima escassa.', 'Geração intermitente.', 'Causam alagamentos.'],
+    respostaCorreta: 'Geração intermitente.',
+  },
+  {
+    pergunta: 'A energia maremotriz é gerada a partir de qual fenômeno natural?',
+    alternativas: ['Da força das ondas.', 'Do movimento das marés.', 'Das correntes de vento.', 'Da diferença de temperatura.'],
+    respostaCorreta: 'Do movimento das marés.',
+  },
+  {
     pergunta: 'Quem é o criador do Sítio do Picapau Amarelo?',
     alternativas: ['Mário de Andrade', 'Maurício de Souza', 'Lima Barreto', 'Monteiro Lobato'],
     respostaCorreta: 'Monteiro Lobato',
@@ -164,9 +204,539 @@ const perguntas = [
     respostaCorreta: 'Eu Sei Que Vou Te Amar',
   },
   {
+    pergunta: 'Qual dos seguintes gases é o principal responsável pelo agravamento do efeito estufa?',
+    alternativas: ['Oxigênio (O2)', 'Dióxido de Carbono (CO2)', 'Nitrogênio (N2)', 'Hélio (He)'],
+    respostaCorreta: 'Dióxido de Carbono (CO2)',
+  },
+  {
+    pergunta: 'O processo de contaminação da água por excesso de nutrientes é chamado de:',
+    alternativas: ['Acidificação', 'Dessalinização', 'Eutrofização', 'Condensação'],
+    respostaCorreta: 'Eutrofização',
+  },
+  {
+    pergunta: 'Qual das seguintes fontes de energia é considerada renovável?',
+    alternativas: ['Carvão Mineral', 'Gás Natural', 'Petróleo', 'Energia Solar'],
+    respostaCorreta: 'Energia Solar',
+  },
+  {
+    pergunta: 'A destruição em larga escala de florestas é conhecida como:',
+    alternativas: ['Reflorestamento', 'Desmatamento', 'Desertificação', 'Assoreamento'],
+    respostaCorreta: 'Desmatamento',
+  },
+  {
+    pergunta: 'Qual o nome do acordo mundial que visa reduzir a emissão de gases de efeito estufa?',
+    alternativas: ['Protocolo de Kyoto', 'Tratado de Tordesilhas', 'Acordo de Paris', 'Pacto de Varsóvia'],
+    respostaCorreta: 'Acordo de Paris',
+  },
+  {
+    pergunta: 'A variedade de formas de vida existentes no planeta é chamada de:',
+    alternativas: ['Ecossistema', 'Bioma', 'Biodiversidade', 'População'],
+    respostaCorreta: 'Biodiversidade',
+  },
+  {
+    pergunta: 'O que significa o conceito dos 3 R\'s da sustentabilidade?',
+    alternativas: ['Respeitar, Renovar, Replantar', 'Remover, Refazer, Regular', 'Reciclar, Reutilizar, Reduzir', 'Racionar, Repensar, Reaproveitar'],
+    respostaCorreta: 'Reciclar, Reutilizar, Reduzir',
+  },
+  {
+    pergunta: 'A chuva com alta concentração de ácidos é chamada de:',
+    alternativas: ['Chuva de Granizo', 'Chuva Ácida', 'Inversão Térmica', 'Tempestade Tropical'],
+    respostaCorreta: 'Chuva Ácida',
+  },
+  {
+    pergunta: 'Qual camada da atmosfera nos protege da radiação ultravioleta (UV) do sol?',
+    alternativas: ['Troposfera', 'Mesosfera', 'Camada de Ozônio', 'Ionosfera'],
+    respostaCorreta: 'Camada de Ozônio',
+  },
+  {
+    pergunta: 'O desenvolvimento que atende às necessidades do presente sem comprometer as gerações futuras é:',
+    alternativas: ['Desenvolvimento Econômico', 'Desenvolvimento Sustentável', 'Progresso Tecnológico', 'Crescimento Populacional'],
+    respostaCorreta: 'Desenvolvimento Sustentável',
+  },
+  {
+    pergunta: 'Qual bioma brasileiro é conhecido como a maior planície inundável do mundo?',
+    alternativas: ['Amazônia', 'Cerrado', 'Mata Atlântica', 'Pantanal'],
+    respostaCorreta: 'Pantanal',
+  },
+  {
+    pergunta: 'A pegada de carbono mede o quê?',
+    alternativas: ['Quantidade de água consumida', 'Total de gases de efeito estufa emitidos', 'Área de terra necessária', 'Quantidade de lixo reciclado'],
+    respostaCorreta: 'Total de gases de efeito estufa emitidos',
+  },
+  {
+    pergunta: 'Qual o principal objetivo da coleta seletiva de lixo?',
+    alternativas: ['Aumentar lixo nos aterros', 'Separar materiais recicláveis', 'Deixar ruas mais limpas', 'Gerar mais empregos'],
+    respostaCorreta: 'Separar materiais recicláveis',
+  },
+  {
+    pergunta: 'Animais que correm o risco de desaparecer completamente são chamados de:',
+    alternativas: ['Animais domésticos', 'Animais exóticos', 'Animais em extinção', 'Animais silvestres'],
+    respostaCorreta: 'Animais em extinção',
+  },
+  {
+    pergunta: 'O que é um aterro sanitário?',
+    alternativas: ['Lixo queimado a céu aberto', 'Descarte de lixo sem controle', 'Terreno preparado para receber resíduos', 'Usina de reciclagem'],
+    respostaCorreta: 'Terreno preparado para receber resíduos',
+  },
+  {
     pergunta: 'A figura do folclore brasileiro conhecida como Iara era uma:',
     alternativas: ['Jacaré', 'Mula', 'Boto', 'Sereia'],
     respostaCorreta: 'Sereia',
+  },
+  {
+    pergunta: 'Qual é o nome da linha que divide o círculo em duas partes iguais?',
+    alternativas: ['Diagonal', 'Corda', 'Raio', 'Diâmetro'],
+    respostaCorreta: 'Diâmetro',
+  },
+  {
+    pergunta: 'Qual o resultado da conta 1²¹ + 3²?',
+    alternativas: ['30', '27', '10', '7'],
+    respostaCorreta: '10',
+  },
+  {
+    pergunta: 'Qual a fórmula para calcular a área de um triângulo com ângulo de 90°?',
+    alternativas: ['|x|', 'b x h', '(b x h)/2', 'raiz(a² + b²)'],
+    respostaCorreta: '(b x h)/2',
+  },
+  {
+    pergunta: 'Em qual conjunto numérico se encontra o número raiz quadrada de -24?',
+    alternativas: ['Conjunto dos reais', 'Conjunto dos complexos', 'Conjunto dos Racionais', 'Não existe raiz negativa'],
+    respostaCorreta: 'Conjunto dos complexos',
+  },
+  {
+    pergunta: 'Suponha que temos um ângulo A e um ângulo B. Sendo eles ângulos suplementares, qual o valor do ângulo B se A tiver o valor de 45°?',
+    alternativas: ['315°', '135°', '45°', '90°'],
+    respostaCorreta: '135°',
+  },
+  {
+    pergunta: 'Qual artista brasileiro canta a música "Garota Ipanema"?',
+    alternativas: ['Tom Jobin', 'Cazuza', 'Luiz Gonzaga', 'Chico Buarque'],
+    respostaCorreta: 'Tom Jobin',
+  },
+  {
+    pergunta: 'Qual o nome da celebração cultural e religiosa popular brasileira, tradicionalmente realizada em junho, que mistura elementos da cultura europeia com influências indígenas e africanas, homenageando santos católicos como Santo Antônio, São João e São Pedro.',
+    alternativas: ['Círio de Nazaré', 'Semana Farroupilha', 'Festa Junina', 'Carnaval'],
+    respostaCorreta: 'Festa Junina',
+  },
+  {
+    pergunta: 'Qual costume indígena nós temos até hoje?',
+    alternativas: ['Andar descalço', 'Tomar banho todo dia', 'Lavar as mãos pra comer', 'Comer peixe com limão'],
+    respostaCorreta: 'Tomar banho todo dia',
+  },
+  {
+    pergunta: 'Qual desses desenhos animados é feito por um brasileiro?',
+    alternativas: ['Phineas e ferb', 'Steven universo', 'Irmão do Jorel', 'Simpsons'],
+    respostaCorreta: 'Irmão do Jorel',
+  },
+  {
+    pergunta: 'Quem é o autor do personagem menino maluquinho?',
+    alternativas: ['Ziraldo', 'Maurício de Souza', 'Gabriel Picolo', 'Walmir Amaral'],
+    respostaCorreta: 'Ziraldo',
+  },
+  {
+    pergunta: 'Qual o nome da entidade folclórica braileira que é guardiã da natureza e da vida selvagem?',
+    alternativas: ['Iara', 'Caipora', 'Curupira', 'Boitatá'],
+    respostaCorreta: 'Caipora',
+  },
+  {
+    pergunta: 'Qual o nome do movimento cultural que surgiu no final da década de 60 e buscava refletir as contradições do Brasil em um contexto de ditadura militar?',
+    alternativas: ['Antropofagia', 'Modernismo', 'Barroco', 'Tropicalismo'],
+    respostaCorreta: 'Tropicalismo',
+  },
+  {
+    pergunta: 'Qual o nome do flautista do grupo instrumental brasileiro Oito Batutas?',
+    alternativas: ['Gilberto Gill', 'Cartola', 'Pixinguinha', 'Donga'],
+    respostaCorreta: 'Pixinguinha',
+  },
+  {
+    pergunta: 'Qual o nome da banda de rock brasileira formada por Renato Russo, Marcelo Bonfá, Dado Villa-Lobos e Renato Rocha',
+    alternativas: ['Secos e molhados', 'Legião Urbana', 'Los Hermanos', 'Os Mutantes'],
+    respostaCorreta: 'Legião Urbana',
+  },
+  {
+    pergunta: 'Quem é o criador do sítio do pica-pau amarelo?',
+    alternativas: ['Mário de Andrade', 'Maurício de Souza', 'Lima Barreto', 'Monteiro Lobato'],
+    respostaCorreta: 'Monteiro Lobato',
+  },
+  {
+    pergunta: 'A obra "Navio Negreiro" de Castro Alves pertence a qual movimento artístico?',
+    alternativas: ['Romantismo', 'Modernismo', 'Cubismo', 'Barroco'],
+    respostaCorreta: 'Romantismo',
+  },
+  {
+    pergunta: 'O livro "Dom Casmurro" é de qual escritor brasileiro?',
+    alternativas: ['Carlos Drummond de Andrade', 'Machado de Assis', 'Jorge Amado', 'Guimarães Rosa'],
+    respostaCorreta: 'Machado de Assis',
+  },
+  {
+    pergunta: 'A atriz Fernanda Torres foi indicada ao Oscar de melhor atriz por qual filme?',
+    alternativas: ['Tapas e Beijos', 'Eu Sei Que Vou Te Amar', 'Ainda Estou Aqui', 'Casa de Areia'],
+    respostaCorreta: 'Ainda Estou Aqui',
+  },
+  {
+    pergunta: 'A figura do folclore brasileiro conhecida como Iara era um(a):',
+    alternativas: ['Jacaré', 'Mula', 'Boto', 'Sereia'],
+    respostaCorreta: 'Sereia',
+  },
+  {
+    pergunta: 'Em que ano o Brasil sediou os Jogos Olímpicos?',
+    alternativas: ['2014', '2016', '2012', '2006'],
+    respostaCorreta: '2016',
+  },
+  {
+    pergunta: 'Qual medalha a skatista Raissa Leal conquistou nas olimpíadas de 2024 em París?',
+    alternativas: ['Ouro', 'Prata', 'Bronze', 'Não conquistou nenhuma medalha'],
+    respostaCorreta: 'Bronze',
+  },
+  {
+    pergunta: 'Qual evento deu início à Primeira Guerra Mundial em 1914?',
+    alternativas: ['A Revolução Russa', 'A invasão da Polônia', 'A queda da Bastilha', 'O assassinato de Francisco Ferdinando'],
+    respostaCorreta: 'O assassinato de Francisco Ferdinando',
+  },
+  {
+    pergunta: 'Quem é o autor da obra "Mona Lisa"?',
+    alternativas: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
+    respostaCorreta: 'Leonardo da Vinci',
+  },
+  {
+    pergunta: 'Qual é o maior planeta do nosso Sistema Solar?',
+    alternativas: ['Terra', 'Saturno', 'Júpiter', 'Marte'],
+    respostaCorreta: 'Júpiter',
+  },
+  {
+    pergunta: 'Em qual continente está localizado o Deserto do Saara?',
+    alternativas: ['Ásia', 'África', 'Oceania', 'América do Sul'],
+    respostaCorreta: 'África',
+  },
+  {
+    pergunta: 'Qual é o rio mais longo do mundo?',
+    alternativas: ['Rio Nilo', 'Rio Mississipi', 'Rio Yangtzé', 'Rio Amazonas'],
+    respostaCorreta: 'Rio Amazonas',
+  },
+  {
+    pergunta: 'A Teoria da Relatividade foi desenvolvida por qual cientista?',
+    alternativas: ['Isaac Newton', 'Albert Einstein', 'Galileu Galilei', 'Marie Curie'],
+    respostaCorreta: 'Albert Einstein',
+  },
+  {
+    pergunta: 'Qual das seguintes fontes de energia é considerada renovável?',
+    alternativas: ['Petróleo', 'Gás Natural', 'Energia Eólica', 'Carvão Mineral'],
+    respostaCorreta: 'Energia Eólica',
+  },
+  {
+    pergunta: 'Quantos lados tem um heptágono?',
+    alternativas: ['5', '6', '7', '8'],
+    respostaCorreta: '7',
+  },
+  {
+    pergunta: 'Qual cidade é famosa por abrigar a Torre Eiffel?',
+    alternativas: ['Londres', 'Roma', 'Berlim', 'Paris'],
+    respostaCorreta: 'Paris',
+  },
+  {
+    pergunta: 'O processo pelo qual as plantas produzem seu próprio alimento é a:',
+    alternativas: ['Respiração', 'Fotossíntese', 'Transpiração', 'Decomposição'],
+    respostaCorreta: 'Fotossíntese',
+  },
+  {
+    pergunta: 'Quem escreveu "Romeu e Julieta"?',
+    alternativas: ['Dante Alighieri', 'Miguel de Cervantes', 'William Shakespeare', 'Homero'],
+    respostaCorreta: 'William Shakespeare',
+  },
+  {
+    pergunta: 'Qual é a montanha mais alta do mundo?',
+    alternativas: ['Monte Kilimanjaro', 'K2', 'Monte Everest', 'Aconcágua'],
+    respostaCorreta: 'Monte Everest',
+  },
+  {
+    pergunta: 'A Guerra Fria foi uma disputa ideológica entre quais duas superpotências?',
+    alternativas: ['Alemanha e Japão', 'Reino Unido e França', 'EUA e União Soviética', 'China e Índia'],
+    respostaCorreta: 'EUA e União Soviética',
+  },
+  {
+    pergunta: 'Qual planeta é conhecido como o "Planeta Vermelho"?',
+    alternativas: ['Vênus', 'Saturno', 'Júpiter', 'Marte'],
+    respostaCorreta: 'Marte',
+  },
+  {
+    pergunta: 'A ONU foi criada após qual grande conflito mundial?',
+    alternativas: ['Guerra do Vietnã', 'Primeira Guerra Mundial', 'Segunda Guerra Mundial', 'Guerra da Coreia'],
+    respostaCorreta: 'Segunda Guerra Mundial',
+  },
+  {
+    pergunta: 'Quanto é 20% de 200?',
+    alternativas: ['10', '20', '30', '40'],
+    respostaCorreta: '40',
+  },
+  {
+    pergunta: 'Ao lançar um dado comum de 6 faces, qual a probabilidade de sair um número par?',
+    alternativas: ['1/6', '1/3', '1/2', '2/3'],
+    respostaCorreta: '1/2',
+  },
+  {
+    pergunta: 'Quanto é 45 - 53?',
+    alternativas: ['-8', '8', '-9', '9'],
+    respostaCorreta: '-8',
+  },
+  {
+    pergunta: 'Quantos cm tem 12 km?',
+    alternativas: ['120.000', '1.200.000', '12.000.000', '12.000'],
+    respostaCorreta: '1.200.000',
+  },
+  {
+    pergunta: 'A constante de pi pertence a qual conjunto numérico?',
+    alternativas: ['Conjunto dos irracionais', 'Conjunto dos naturais', 'Conjunto dos racionais', 'Conjunto dos complexos'],
+    respostaCorreta: 'Conjunto dos irracionais',
+  },
+  {
+    pergunta: 'Quanto é 12 x 6?',
+    alternativas: ['62', '48', '60', '72'],
+    respostaCorreta: '72',
+  },
+  {
+    pergunta: 'Se João tem 72 reais e divide ele entre seus 8 netos, quantos reais cada um vai ganhar?',
+    alternativas: ['R$8,00', 'R$9,00', 'R$7,00', 'R$8,50'],
+    respostaCorreta: 'R$9,00',
+  },
+  {
+    pergunta: 'A soma dos ângulos internos de qualquer triângulo é sempre igual a:',
+    alternativas: ['90°', '180°', '270°', '360°'],
+    respostaCorreta: '180°',
+  },
+  {
+    pergunta: 'Qual a raiz quadrada de 144?',
+    alternativas: ['11', '13', '14', '12'],
+    respostaCorreta: '12',
+  },
+  {
+    pergunta: 'Qual a raiz cúbica de 64?',
+    alternativas: ['3', '8', '4', '16'],
+    respostaCorreta: '4',
+  },
+  {
+    pergunta: 'Qual organela é responsável pela respiração celular e produção de ATP?',
+    alternativas: ['Ribossomo', 'Lisossomo', 'Mitocôndria', 'Cloroplasto'],
+    respostaCorreta: 'Mitocôndria',
+  },
+  {
+    pergunta: 'O conjunto de características visíveis de um organismo é chamado de:',
+    alternativas: ['Genótipo', 'Cariótipo', 'Alelo', 'Fenótipo'],
+    respostaCorreta: 'Fenótipo',
+  },
+  {
+    pergunta: 'Qual dos reinos agrupa seres procariontes, como as bactérias?',
+    alternativas: ['Reino Fungi', 'Reino Monera', 'Reino Protista', 'Reino Plantae'],
+    respostaCorreta: 'Reino Monera',
+  },
+  {
+    pergunta: 'O processo pelo qual as plantas utilizam luz para produzir seu alimento é a:',
+    alternativas: ['Respiração', 'Fotossíntese', 'Transpiração', 'Quimiossíntese'],
+    respostaCorreta: 'Fotossíntese',
+  },
+  {
+    pergunta: 'A relação ecológica entre o cupim e os protozoários em seu intestino é um exemplo de:',
+    alternativas: ['Parasitismo', 'Predatismo', 'Mutualismo', 'Competição'],
+    respostaCorreta: 'Mutualismo',
+  },
+  {
+    pergunta: 'Qual é a principal função das hemácias (glóbulos vermelhos) no sangue?',
+    alternativas: ['Coagulação', 'Defesa imunológica', 'Transporte de O₂', 'Transporte de H₂O'],
+    respostaCorreta: 'Transporte de O₂',
+  },
+  {
+    pergunta: 'A divisão celular que reduz o número de cromossomos pela metade é a:',
+    alternativas: ['Mitose', 'Prófase', 'Meiose', 'Anáfase'],
+    respostaCorreta: 'Meiose',
+  },
+  {
+    pergunta: 'Asas de morcegos e asas de insetos são exemplos de estruturas:',
+    alternativas: ['Homólogas', 'Vestigiais', 'Embrionárias', 'Análogas'],
+    respostaCorreta: 'Análogas',
+  },
+  {
+    pergunta: 'Qual hormônio, produzido pelo pâncreas, regula a entrada de glicose nas células?',
+    alternativas: ['Glucagon', 'Adrenalina', 'Insulina', 'Testosterona'],
+    respostaCorreta: 'Insulina',
+  },
+  {
+    pergunta: 'O tecido vegetal que transporta a seiva bruta (água e sais) é o:',
+    alternativas: ['Floema', 'Parênquima', 'Colênquima', 'Xilema'],
+    respostaCorreta: 'Xilema',
+  },
+  {
+    pergunta: 'Um indivíduo com genótipo "Aa" para uma característica é considerado:',
+    alternativas: ['Homozigoto', 'Recessivo', 'Heterozigoto', 'Dominante'],
+    respostaCorreta: 'Heterozigoto',
+  },
+  {
+    pergunta: 'A principal teoria da evolução, proposta por Darwin, baseia-se na:',
+    alternativas: ['Lei do Uso e Desuso', 'Herança de Caracteres', 'Geração Espontânea', 'Seleção Natural'],
+    respostaCorreta: 'Seleção Natural',
+  },
+  {
+    pergunta: 'Em qual parte do sistema digestório humano ocorre a maior parte da absorção de nutrientes?',
+    alternativas: ['Estômago', 'Intestino Grosso', 'Fígado', 'Intestino Delgado'],
+    respostaCorreta: 'Intestino Delgado',
+  },
+  {
+    pergunta: 'Os vírus são considerados parasitas intracelulares obrigatórios por que:',
+    alternativas: ['Possuem núcleo', 'Não têm metabolismo', 'Fazem fotossíntese', 'São pluricelulares'],
+    respostaCorreta: 'Não têm metabolismo',
+  },
+  {
+    pergunta: 'O número atômico (Z) de um elemento químico corresponde ao número de:',
+    alternativas: ['Nêutrons', 'Elétrons', 'Prótons', 'Íons'],
+    respostaCorreta: 'Prótons',
+  },
+  {
+    pergunta: 'Qual tipo de ligação química ocorre pela transferência de elétrons entre um metal e um ametal?',
+    alternativas: ['Ligação Covalente', 'Ligação Metálica', 'Ligação Iônica', 'Ponte de Hidrogênio'],
+    respostaCorreta: 'Ligação Iônica',
+  },
+  {
+    pergunta: 'Na Tabela Periódica, os elementos da família 18 (ou 8A) são conhecidos como:',
+    alternativas: ['Metais Alcalinos', 'Halogênios', 'Gases Nobres', 'Metais de Transição'],
+    respostaCorreta: 'Gases Nobres',
+  },
+  {
+    pergunta: 'Uma solução com pH = 2 é considerada:',
+    alternativas: ['Ácida', 'Básica', 'Neutra', 'Alcalina'],
+    respostaCorreta: 'Ácida',
+  },
+  {
+    pergunta: 'A reação de combustão completa de um composto orgânico sempre produz:',
+    alternativas: ['CO e H₂O', 'O₂ e CO₂', 'CO₂ e H₂O', 'H₂ e O₂'],
+    respostaCorreta: 'CO₂ e H₂O',
+  },
+  {
+    pergunta: 'Qual é a massa molar aproximada da molécula de água (H₂O)? (Dados: H=1, O=16)',
+    alternativas: ['16 g/mol', '17 g/mol', '18 g/mol', '2 g/mol'],
+    respostaCorreta: '18 g/mol',
+  },
+  {
+    pergunta: 'Átomos de um mesmo elemento químico que possuem diferentes números de nêutrons são chamados de:',
+    alternativas: ['Isóbaros', 'Isótonos', 'Isômeros', 'Isótopos'],
+    respostaCorreta: 'Isótopos',
+  },
+  {
+    pergunta: 'Qual das seguintes substâncias é um exemplo de hidrocarboneto?',
+    alternativas: ['Etanol (C₂H₅OH)', 'Glicose (C₆H₁₂O₆)', 'Sal de cozinha (NaCl)', 'Metano (CH₄)'],
+    respostaCorreta: 'Metano (CH₄)',
+  },
+  {
+    pergunta: 'O processo de passagem direta de uma substância do estado sólido para o gasoso é chamado:',
+    alternativas: ['Fusão', 'Ebulição', 'Sublimação', 'Condensação'],
+    respostaCorreta: 'Sublimação',
+  },
+  {
+    pergunta: 'Segundo a Primeira Lei de Newton (Inércia), um corpo em movimento tende a:',
+    alternativas: ['Parar imediatamente', 'Acelerar continuamente', 'Manter seu movimento retilíneo e uniforme', 'Mudar de direção'],
+    respostaCorreta: 'Manter seu movimento retilíneo e uniforme',
+  },
+  {
+    pergunta: 'A grandeza física que mede a energia transferida de um corpo para outro devido à diferença de temperatura é:',
+    alternativas: ['Potência', 'Pressão', 'Trabalho', 'Calor'],
+    respostaCorreta: 'Calor',
+  },
+  {
+    pergunta: 'Qual é a unidade de medida de Tensão Elétrica (d.d.p.) no Sistema Internacional?',
+    alternativas: ['Ampere (A)', 'Ohm (Ω)', 'Watt (W)', 'Volt (V)'],
+    respostaCorreta: 'Volt (V)',
+  },
+  {
+    pergunta: 'O fenômeno que explica por que uma colher parece "quebrada" dentro de um copo com água é a:',
+    alternativas: ['Reflexão', 'Refração', 'Difração', 'Polarização'],
+    respostaCorreta: 'Refração',
+  },
+  {
+    pergunta: 'De acordo com a Segunda Lei de Newton, a aceleração de um corpo é diretamente proporcional à:',
+    alternativas: ['Sua massa', 'Sua velocidade', 'Força resultante', 'Sua temperatura'],
+    respostaCorreta: 'Força resultante',
+  },
+  {
+    pergunta: 'Um carro que se move com velocidade constante de 90 km/h está em:',
+    alternativas: ['Movimento acelerado', 'Movimento retardado', 'Movimento uniforme', 'Repouso'],
+    respostaCorreta: 'Movimento uniforme',
+  },
+  {
+    pergunta: 'O som é uma onda do tipo:',
+    alternativas: ['Eletromagnética e transversal', 'Mecânica e longitudinal', 'Eletromagnética e longitudinal', 'Mecânica e transversal'],
+    respostaCorreta: 'Mecânica e longitudinal',
+  },
+  {
+    pergunta: 'A energia associada ao movimento de um corpo é chamada de energia:',
+    alternativas: ['Potencial', 'Térmica', 'Cinética', 'Elástica'],
+    respostaCorreta: 'Cinética',
+  },
+  {
+    pergunta: 'Em um circuito elétrico em série, se uma lâmpada queimar, as outras:',
+    alternativas: ['Continuam acesas', 'Apagam', 'Brilham mais forte', 'Diminuem o brilho'],
+    respostaCorreta: 'Apagam',
+  },
+  {
+    pergunta: 'Qual processo de propagação de calor ocorre sem a necessidade de um meio material, como o calor do Sol que chega à Terra?',
+    alternativas: ['Condução', 'Convecção', 'Radiação', 'Ebulição'],
+    respostaCorreta: 'Radiação',
+  },
+  {
+    pergunta: 'A Primeira Lei da Termodinâmica é uma afirmação do princípio da:',
+    alternativas: ['Conservação da Carga', 'Conservação da Massa', 'Ação e Reação', 'Conservação da Energia'],
+    respostaCorreta: 'Conservação da Energia',
+  },
+  {
+    pergunta: 'A grandeza física que relaciona a frequência de uma onda com seu comprimento de onda é a:',
+    alternativas: ['Amplitude', 'Velocidade', 'Período', 'Fase'],
+    respostaCorreta: 'Velocidade',
+  },
+  {
+    pergunta: 'A imagem formada por um espelho plano é sempre:',
+    alternativas: ['Real, invertida e menor', 'Virtual, direita e do mesmo tamanho', 'Real, direita e maior', 'Virtual, invertida e do mesmo tamanho'],
+    respostaCorreta: 'Virtual, direita e do mesmo tamanho',
+  },
+  {
+    pergunta: 'A força de atração ou repulsão entre duas cargas elétricas é descrita pela Lei de:',
+    alternativas: ['Ohm', 'Faraday', 'Ampère', 'Coulomb'],
+    respostaCorreta: 'Coulomb',
+  },
+  {
+    pergunta: 'A pressão exercida por um fluido em repouso aumenta com a:',
+    alternativas: ['Velocidade', 'Temperatura', 'Área', 'Profundidade'],
+    respostaCorreta: 'Profundidade',
+  },
+  {
+    pergunta: 'De acordo com a Lei de Lavoisier, em uma reação química, a massa total dos reagentes é:',
+    alternativas: ['Menor que a dos produtos', 'Maior que a dos produtos', 'Variável', 'Igual à dos produtos'],
+    respostaCorreta: 'Igual à dos produtos',
+  },
+  {
+    pergunta: 'Qual função orgânica é caracterizada pela presença do grupo funcional hidroxila (-OH) ligado a um carbono saturado?',
+    alternativas: ['Éter', 'Álcool', 'Aldeído', 'Cetona'],
+    respostaCorreta: 'Álcool',
+  },
+  {
+    pergunta: 'A ligação que ocorre pelo compartilhamento de pares de elétrons entre átomos é a:',
+    alternativas: ['Ligação Iônica', 'Ligação Metálica', 'Ligação de Hidrogênio', 'Ligação Covalente'],
+    respostaCorreta: 'Ligação Covalente',
+  },
+  {
+    pergunta: 'Qual é o nome do processo de separação de misturas que utiliza um funil de bromo?',
+    alternativas: ['Peneiração', 'Filtração', 'Decantação', 'Destilação'],
+    respostaCorreta: 'Decantação',
+  },
+  {
+    pergunta: 'Qual gás é o principal responsável pelo agravamento do efeito estufa?',
+    alternativas: ['Oxigênio (O₂)', 'Nitrogênio (N₂)', 'Dióxido de Carbono (CO₂)', 'Hélio (He)'],
+    respostaCorreta: 'Dióxido de Carbono (CO₂)',
+  },
+  {
+    pergunta: 'Em uma reação de neutralização, um ácido reage com uma base para formar:',
+    alternativas: ['Sal e Óxido', 'Ácido e Água', 'Óxido e Base', 'Sal e Água'],
+    respostaCorreta: 'Sal e Água',
+  },
+  {
+    pergunta: 'A base nitrogenada exclusiva do RNA, que substitui a Timina do DNA, é a:',
+    alternativas: ['Citosina', 'Uracila', 'Guanina', 'Adenina'],
+    respostaCorreta: 'Uracila',
   },
   {
     pergunta: 'Em que ano o Brasil sediou os Jogos Olímpicos?',
@@ -623,7 +1193,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} alt="Logo do Game of Science" className="quiz-logo" style="width:20%;"/>
+<img src={logo} alt="Logo do Game of Science" className="quiz-logo" style={{ width: '20%' }}/>
       <h1>Game of Science</h1>
       <div className="quiz-container">
         <h2>{perguntaAtual.pergunta}</h2>
