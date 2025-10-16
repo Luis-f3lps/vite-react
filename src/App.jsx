@@ -257,7 +257,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} alt="Logo do Game of Science" className="quiz-logo" style="width:20%;"/>
+<img src={logo} alt="Logo do Game of Science" className="quiz-logo" style={{ width: '20%' }}/>
       <h1>Game of Science</h1>
       <div className="quiz-container">
         <h2>{perguntaAtual.pergunta}</h2>
