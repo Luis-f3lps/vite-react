@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import './App.css';
 import logo from './logo.svg';
 
@@ -1136,20 +1136,13 @@ const shuffleArray = (array) => {
 
 
 function App() {
-  const [perguntasEmbaralhadas, setPerguntasEmbaralhadas] = useState([]);
+
+  const [perguntasEmbaralhadas, setPerguntasEmbaralhadas] = useState(() => shuffleArray(perguntas));
   
   const [indicePergunta, setIndicePergunta] = useState(0);
   const [feedback, setFeedback] = useState('');
   const [jaRespondeu, setJaRespondeu] = useState(false);
   const [respostaSelecionada, setRespostaSelecionada] = useState(null);
-
-  useEffect(() => {
-    setPerguntasEmbaralhadas(shuffleArray(perguntas));
-  }, []); 
-
-  if (perguntasEmbaralhadas.length === 0) {
-    return <div>Carregando quiz...</div>;
-  }
 
   const perguntaAtual = perguntasEmbaralhadas[indicePergunta];
 
@@ -1177,7 +1170,7 @@ function App() {
       setIndicePergunta(proximoIndice);
     } else {
       alert('Fim de jogo! O quiz será reiniciado.');
-      setPerguntasEmbaralhadas(shuffleArray(perguntas));
+      setPerguntasEmbaralhadas(shuffleArray(perguntas)); 
       setIndicePergunta(0);
     }
   };
@@ -1193,23 +1186,27 @@ function App() {
 
   return (
     <div className="App">
-<img src={logo} alt="Logo do Game of Science" className="quiz-logo" style={{ width: '20%' }}/>
+      <img src={logo} alt="Logo do Game of Science" className="quiz-logo" style={{ width: '20%' }}/>
       <h1>Game of Science</h1>
       <div className="quiz-container">
-        <h2>{perguntaAtual.pergunta}</h2>
-        
-        <div className="alternativas-grid">
-          {perguntaAtual.alternativas.map((alt, index) => (
-            <button
-              key={index}
-              className={`alternativa-btn ${getClassForButton(alt)}`}
-              onClick={() => handleRespostaClick(alt)}
-              disabled={jaRespondeu}
-            >
-              {String.fromCharCode(97 + index)}) {alt}
-            </button>
-          ))}
-        </div>
+        {perguntaAtual && (
+          <>
+            <h2>{perguntaAtual.pergunta}</h2>
+            
+            <div className="alternativas-grid">
+              {perguntaAtual.alternativas.map((alt, index) => (
+                <button
+                  key={index}
+                  className={`alternativa-btn ${getClassForButton(alt)}`}
+                  onClick={() => handleRespostaClick(alt)}
+                  disabled={jaRespondeu}
+                >
+                  {String.fromCharCode(97 + index)}) {alt}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
 
         {feedback && (
           <div className="feedback-container">
