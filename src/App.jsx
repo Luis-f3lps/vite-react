@@ -195,6 +195,81 @@ const perguntas = [
     respostaCorreta: '135°',
   },
   {
+    pergunta: 'Qual evento deu início à Primeira Guerra Mundial em 1914?',
+    alternativas: ['A Revolução Russa', 'A invasão da Polônia', 'A queda da Bastilha', 'O assassinato de Francisco Ferdinando'],
+    respostaCorreta: 'O assassinato de Francisco Ferdinando',
+  },
+  {
+    pergunta: 'Quem é o autor da obra "Mona Lisa"?',
+    alternativas: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
+    respostaCorreta: 'Leonardo da Vinci',
+  },
+  {
+    pergunta: 'Qual é o maior planeta do nosso Sistema Solar?',
+    alternativas: ['Terra', 'Saturno', 'Júpiter', 'Marte'],
+    respostaCorreta: 'Júpiter',
+  },
+  {
+    pergunta: 'Em qual continente está localizado o Deserto do Saara?',
+    alternativas: ['Ásia', 'África', 'Oceania', 'América do Sul'],
+    respostaCorreta: 'África',
+  },
+  {
+    pergunta: 'Qual é o rio mais longo do mundo?',
+    alternativas: ['Rio Nilo', 'Rio Mississipi', 'Rio Yangtzé', 'Rio Amazonas'],
+    respostaCorreta: 'Rio Amazonas',
+  },
+  {
+    pergunta: 'A Teoria da Relatividade foi desenvolvida por qual cientista?',
+    alternativas: ['Isaac Newton', 'Albert Einstein', 'Galileu Galilei', 'Marie Curie'],
+    respostaCorreta: 'Albert Einstein',
+  },
+  {
+    pergunta: 'Qual das seguintes fontes de energia é considerada renovável?',
+    alternativas: ['Petróleo', 'Gás Natural', 'Energia Eólica', 'Carvão Mineral'],
+    respostaCorreta: 'Energia Eólica',
+  },
+  {
+    pergunta: 'Quantos lados tem um heptágono?',
+    alternativas: ['5', '6', '7', '8'],
+    respostaCorreta: '7',
+  },
+  {
+    pergunta: 'Qual cidade é famosa por abrigar a Torre Eiffel?',
+    alternativas: ['Londres', 'Roma', 'Berlim', 'Paris'],
+    respostaCorreta: 'Paris',
+  },
+  {
+    pergunta: 'O processo pelo qual as plantas produzem seu próprio alimento é a:',
+    alternativas: ['Respiração', 'Fotossíntese', 'Transpiração', 'Decomposição'],
+    respostaCorreta: 'Fotossíntese',
+  },
+  {
+    pergunta: 'Quem escreveu "Romeu e Julieta"?',
+    alternativas: ['Dante Alighieri', 'Miguel de Cervantes', 'William Shakespeare', 'Homero'],
+    respostaCorreta: 'William Shakespeare',
+  },
+  {
+    pergunta: 'Qual é a montanha mais alta do mundo?',
+    alternativas: ['Monte Kilimanjaro', 'K2', 'Monte Everest', 'Aconcágua'],
+    respostaCorreta: 'Monte Everest',
+  },
+  {
+    pergunta: 'A Guerra Fria foi uma disputa ideológica entre quais duas superpotências?',
+    alternativas: ['Alemanha e Japão', 'Reino Unido e França', 'EUA e União Soviética', 'China e Índia'],
+    respostaCorreta: 'EUA e União Soviética',
+  },
+  {
+    pergunta: 'Qual planeta é conhecido como o "Planeta Vermelho"?',
+    alternativas: ['Vênus', 'Saturno', 'Júpiter', 'Marte'],
+    respostaCorreta: 'Marte',
+  },
+  {
+    pergunta: 'A ONU foi criada após qual grande conflito mundial?',
+    alternativas: ['Guerra do Vietnã', 'Primeira Guerra Mundial', 'Segunda Guerra Mundial', 'Guerra da Coreia'],
+    respostaCorreta: 'Segunda Guerra Mundial',
+  },
+  {
     pergunta: 'Quanto é 20% de 200?',
     alternativas: ['10', '20', '30', '40'],
     respostaCorreta: '40',
