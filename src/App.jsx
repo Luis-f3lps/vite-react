@@ -145,6 +145,46 @@ const perguntas = [
     respostaCorreta: 'Legião Urbana',
   },
   {
+    pergunta: 'Qual das seguintes fontes de energia NÃO é considerada renovável?',
+    alternativas: ['Solar', 'Eólica', 'Gás Natural', 'Hidrelétrica'],
+    respostaCorreta: 'Gás Natural',
+  },
+  {
+    pergunta: 'Como a energia eólica é gerada?',
+    alternativas: ['Pela queima de biomassa.', 'Pelo movimento das marés.', 'Pela força dos ventos.', 'Pela captação de calor.'],
+    respostaCorreta: 'Pela força dos ventos.',
+  },
+  {
+    pergunta: 'Qual o nome do dispositivo que converte luz solar diretamente em eletricidade?',
+    alternativas: ['Turbina hidrelétrica', 'Painel fotovoltaico', 'Aerogerador', 'Coletor solar térmico'],
+    respostaCorreta: 'Painel fotovoltaico',
+  },
+  {
+    pergunta: 'A energia geotérmica utiliza qual fonte de calor para gerar eletricidade?',
+    alternativas: ['O calor do núcleo da Terra.', 'O calor da queima de lixo.', 'A radiação solar no solo.', 'O atrito das placas tectônicas.'],
+    respostaCorreta: 'O calor do núcleo da Terra.',
+  },
+  {
+    pergunta: 'O que é biomassa, utilizada como fonte de energia renovável?',
+    alternativas: ['Energia das massas de água.', 'Matéria orgânica.', 'Mineral radioativo.', 'Massa de ar quente.'],
+    respostaCorreta: 'Matéria orgânica.',
+  },
+  {
+    pergunta: 'Qual a principal fonte de energia renovável na matriz elétrica do Brasil?',
+    alternativas: ['Eólica', 'Solar', 'Biomassa', 'Hidrelétrica'],
+    respostaCorreta: 'Hidrelétrica',
+  },
+  {
+    pergunta: 'Qual é uma das principais desvantagens da energia solar e eólica?',
+    alternativas: ['Emitem gases estufa.', 'Matéria-prima escassa.', 'Geração intermitente.', 'Causam alagamentos.'],
+    respostaCorreta: 'Geração intermitente.',
+  },
+  {
+    pergunta: 'A energia maremotriz é gerada a partir de qual fenômeno natural?',
+    alternativas: ['Da força das ondas.', 'Do movimento das marés.', 'Das correntes de vento.', 'Da diferença de temperatura.'],
+    respostaCorreta: 'Do movimento das marés.',
+  },
+  {
     pergunta: 'Quem é o criador do Sítio do Picapau Amarelo?',
     alternativas: ['Mário de Andrade', 'Maurício de Souza', 'Lima Barreto', 'Monteiro Lobato'],
     respostaCorreta: 'Monteiro Lobato',
@@ -163,6 +203,81 @@ const perguntas = [
     pergunta: 'A atriz Fernanda Torres foi indicada ao Oscar de melhor atriz por qual filme?',
     alternativas: ['Tapas e Beijos', 'Eu Sei Que Vou Te Amar', 'Ainda Estou Aqui', 'Casa de Areia'],
     respostaCorreta: 'Eu Sei Que Vou Te Amar',
+  },
+  {
+    pergunta: 'Qual dos seguintes gases é o principal responsável pelo agravamento do efeito estufa?',
+    alternativas: ['Oxigênio (O2)', 'Dióxido de Carbono (CO2)', 'Nitrogênio (N2)', 'Hélio (He)'],
+    respostaCorreta: 'Dióxido de Carbono (CO2)',
+  },
+  {
+    pergunta: 'O processo de contaminação da água por excesso de nutrientes é chamado de:',
+    alternativas: ['Acidificação', 'Dessalinização', 'Eutrofização', 'Condensação'],
+    respostaCorreta: 'Eutrofização',
+  },
+  {
+    pergunta: 'Qual das seguintes fontes de energia é considerada renovável?',
+    alternativas: ['Carvão Mineral', 'Gás Natural', 'Petróleo', 'Energia Solar'],
+    respostaCorreta: 'Energia Solar',
+  },
+  {
+    pergunta: 'A destruição em larga escala de florestas é conhecida como:',
+    alternativas: ['Reflorestamento', 'Desmatamento', 'Desertificação', 'Assoreamento'],
+    respostaCorreta: 'Desmatamento',
+  },
+  {
+    pergunta: 'Qual o nome do acordo mundial que visa reduzir a emissão de gases de efeito estufa?',
+    alternativas: ['Protocolo de Kyoto', 'Tratado de Tordesilhas', 'Acordo de Paris', 'Pacto de Varsóvia'],
+    respostaCorreta: 'Acordo de Paris',
+  },
+  {
+    pergunta: 'A variedade de formas de vida existentes no planeta é chamada de:',
+    alternativas: ['Ecossistema', 'Bioma', 'Biodiversidade', 'População'],
+    respostaCorreta: 'Biodiversidade',
+  },
+  {
+    pergunta: 'O que significa o conceito dos 3 R\'s da sustentabilidade?',
+    alternativas: ['Respeitar, Renovar, Replantar', 'Remover, Refazer, Regular', 'Reciclar, Reutilizar, Reduzir', 'Racionar, Repensar, Reaproveitar'],
+    respostaCorreta: 'Reciclar, Reutilizar, Reduzir',
+  },
+  {
+    pergunta: 'A chuva com alta concentração de ácidos é chamada de:',
+    alternativas: ['Chuva de Granizo', 'Chuva Ácida', 'Inversão Térmica', 'Tempestade Tropical'],
+    respostaCorreta: 'Chuva Ácida',
+  },
+  {
+    pergunta: 'Qual camada da atmosfera nos protege da radiação ultravioleta (UV) do sol?',
+    alternativas: ['Troposfera', 'Mesosfera', 'Camada de Ozônio', 'Ionosfera'],
+    respostaCorreta: 'Camada de Ozônio',
+  },
+  {
+    pergunta: 'O desenvolvimento que atende às necessidades do presente sem comprometer as gerações futuras é:',
+    alternativas: ['Desenvolvimento Econômico', 'Desenvolvimento Sustentável', 'Progresso Tecnológico', 'Crescimento Populacional'],
+    respostaCorreta: 'Desenvolvimento Sustentável',
+  },
+  {
+    pergunta: 'Qual bioma brasileiro é conhecido como a maior planície inundável do mundo?',
+    alternativas: ['Amazônia', 'Cerrado', 'Mata Atlântica', 'Pantanal'],
+    respostaCorreta: 'Pantanal',
+  },
+  {
+    pergunta: 'A pegada de carbono mede o quê?',
+    alternativas: ['Quantidade de água consumida', 'Total de gases de efeito estufa emitidos', 'Área de terra necessária', 'Quantidade de lixo reciclado'],
+    respostaCorreta: 'Total de gases de efeito estufa emitidos',
+  },
+  {
+    pergunta: 'Qual o principal objetivo da coleta seletiva de lixo?',
+    alternativas: ['Aumentar lixo nos aterros', 'Separar materiais recicláveis', 'Deixar ruas mais limpas', 'Gerar mais empregos'],
+    respostaCorreta: 'Separar materiais recicláveis',
+  },
+  {
+    pergunta: 'Animais que correm o risco de desaparecer completamente são chamados de:',
+    alternativas: ['Animais domésticos', 'Animais exóticos', 'Animais em extinção', 'Animais silvestres'],
+    respostaCorreta: 'Animais em extinção',
+  },
+  {
+    pergunta: 'O que é um aterro sanitário?',
+    alternativas: ['Lixo queimado a céu aberto', 'Descarte de lixo sem controle', 'Terreno preparado para receber resíduos', 'Usina de reciclagem'],
+    respostaCorreta: 'Terreno preparado para receber resíduos',
   },
   {
     pergunta: 'A figura do folclore brasileiro conhecida como Iara era uma:',
@@ -193,6 +308,86 @@ const perguntas = [
     pergunta: 'Suponha que temos um ângulo A e um ângulo B. Sendo eles ângulos suplementares, qual o valor do ângulo B se A tiver o valor de 45°?',
     alternativas: ['315°', '135°', '45°', '90°'],
     respostaCorreta: '135°',
+  },
+  {
+    pergunta: 'Qual artista brasileiro canta a música "Garota Ipanema"?',
+    alternativas: ['Tom Jobin', 'Cazuza', 'Luiz Gonzaga', 'Chico Buarque'],
+    respostaCorreta: 'Tom Jobin',
+  },
+  {
+    pergunta: 'Qual o nome da celebração cultural e religiosa popular brasileira, tradicionalmente realizada em junho, que mistura elementos da cultura europeia com influências indígenas e africanas, homenageando santos católicos como Santo Antônio, São João e São Pedro.',
+    alternativas: ['Círio de Nazaré', 'Semana Farroupilha', 'Festa Junina', 'Carnaval'],
+    respostaCorreta: 'Festa Junina',
+  },
+  {
+    pergunta: 'Qual costume indígena nós temos até hoje?',
+    alternativas: ['Andar descalço', 'Tomar banho todo dia', 'Lavar as mãos pra comer', 'Comer peixe com limão'],
+    respostaCorreta: 'Tomar banho todo dia',
+  },
+  {
+    pergunta: 'Qual desses desenhos animados é feito por um brasileiro?',
+    alternativas: ['Phineas e ferb', 'Steven universo', 'Irmão do Jorel', 'Simpsons'],
+    respostaCorreta: 'Irmão do Jorel',
+  },
+  {
+    pergunta: 'Quem é o autor do personagem menino maluquinho?',
+    alternativas: ['Ziraldo', 'Maurício de Souza', 'Gabriel Picolo', 'Walmir Amaral'],
+    respostaCorreta: 'Ziraldo',
+  },
+  {
+    pergunta: 'Qual o nome da entidade folclórica braileira que é guardiã da natureza e da vida selvagem?',
+    alternativas: ['Iara', 'Caipora', 'Curupira', 'Boitatá'],
+    respostaCorreta: 'Caipora',
+  },
+  {
+    pergunta: 'Qual o nome do movimento cultural que surgiu no final da década de 60 e buscava refletir as contradições do Brasil em um contexto de ditadura militar?',
+    alternativas: ['Antropofagia', 'Modernismo', 'Barroco', 'Tropicalismo'],
+    respostaCorreta: 'Tropicalismo',
+  },
+  {
+    pergunta: 'Qual o nome do flautista do grupo instrumental brasileiro Oito Batutas?',
+    alternativas: ['Gilberto Gill', 'Cartola', 'Pixinguinha', 'Donga'],
+    respostaCorreta: 'Pixinguinha',
+  },
+  {
+    pergunta: 'Qual o nome da banda de rock brasileira formada por Renato Russo, Marcelo Bonfá, Dado Villa-Lobos e Renato Rocha',
+    alternativas: ['Secos e molhados', 'Legião Urbana', 'Los Hermanos', 'Os Mutantes'],
+    respostaCorreta: 'Legião Urbana',
+  },
+  {
+    pergunta: 'Quem é o criador do sítio do pica-pau amarelo?',
+    alternativas: ['Mário de Andrade', 'Maurício de Souza', 'Lima Barreto', 'Monteiro Lobato'],
+    respostaCorreta: 'Monteiro Lobato',
+  },
+  {
+    pergunta: 'A obra "Navio Negreiro" de Castro Alves pertence a qual movimento artístico?',
+    alternativas: ['Romantismo', 'Modernismo', 'Cubismo', 'Barroco'],
+    respostaCorreta: 'Romantismo',
+  },
+  {
+    pergunta: 'O livro "Dom Casmurro" é de qual escritor brasileiro?',
+    alternativas: ['Carlos Drummond de Andrade', 'Machado de Assis', 'Jorge Amado', 'Guimarães Rosa'],
+    respostaCorreta: 'Machado de Assis',
+  },
+  {
+    pergunta: 'A atriz Fernanda Torres foi indicada ao Oscar de melhor atriz por qual filme?',
+    alternativas: ['Tapas e Beijos', 'Eu Sei Que Vou Te Amar', 'Ainda Estou Aqui', 'Casa de Areia'],
+    respostaCorreta: 'Ainda Estou Aqui',
+  },
+  {
+    pergunta: 'A figura do folclore brasileiro conhecida como Iara era um(a):',
+    alternativas: ['Jacaré', 'Mula', 'Boto', 'Sereia'],
+    respostaCorreta: 'Sereia',
+  },
+  {
+    pergunta: 'Em que ano o Brasil sediou os Jogos Olímpicos?',
+    alternativas: ['2014', '2016', '2012', '2006'],
+    respostaCorreta: '2016',
+  },
+  {
+    pergunta: 'Qual medalha a skatista Raissa Leal conquistou nas olimpíadas de 2024 em París?',
+    alternativas: ['Ouro', 'Prata', 'Bronze', 'Não conquistou nenhuma medalha'],
+    respostaCorreta: 'Bronze',
   },
   {
     pergunta: 'Qual evento deu início à Primeira Guerra Mundial em 1914?',
