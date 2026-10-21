@@ -198,11 +198,7 @@ const perguntas = [
     alternativas: ['Carlos Drummond de Andrade', 'Machado de Assis', 'Jorge Amado', 'Guimarães Rosa'],
     respostaCorreta: 'Machado de Assis',
   },
-  {
-    pergunta: 'A atriz Fernanda Torres foi indicada ao Oscar de melhor atriz por qual filme?',
-    alternativas: ['Tapas e Beijos', 'Eu Sei Que Vou Te Amar', 'Ainda Estou Aqui', 'Casa de Areia'],
-    respostaCorreta: 'Eu Sei Que Vou Te Amar',
-  },
+
   {
     pergunta: 'Qual dos seguintes gases é o principal responsável pelo agravamento do efeito estufa?',
     alternativas: ['Oxigênio (O2)', 'Dióxido de Carbono (CO2)', 'Nitrogênio (N2)', 'Hélio (He)'],
